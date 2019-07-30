@@ -337,17 +337,7 @@ template {
 }
 body {
   text-align: center;
-  font-family: Arial,sans-serif;
-  height: 100vh;
-  -webkit-animation-name: bg-color;
-  animation-name: bg-color;
-  -webkit-animation-duration: 50s;
-  animation-duration: 50s;
-  background-color: bisque;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite
+  font-family: Arial,sans-serif
 }
 @-webkit-keyframes bg-color {
   0% {
@@ -355,6 +345,15 @@ body {
   }
   25% {
     background-color: #87cefa
+  }
+  50% {
+    background-color: azure
+  }
+  75% {
+    background-color: #fff8dc
+  }
+  100% {
+    background-color: bisque
   }
 }
 @keyframes bg-color {
@@ -364,72 +363,26 @@ body {
   25% {
     background-color: #87cefa
   }
-}
-50% {
-  background-color: azure
-}
-75% {
-  background-color: #fff8dc
-}
-100% {
-  background-color: bisque
-}
-.container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 16px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 100%
+  50% {
+    background-color: azure
+  }
+  75% {
+    background-color: #fff8dc
+  }
+  100% {
+    background-color: bisque
+  }
 }
 #canvas {
-  border: 4px solid green;
-  position: absolute;
-  background-color: #e0ffff;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  top: 30%;
-  right: 30%;
-  position: absolute;
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
+  background-color: #87cefa;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: mymove;
-  animation-name: mymove
-}
-#canvas:hover {
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-  -webkit-transform: scale(1.5) rotate(360deg);
-  -ms-transform: scale(1.5) rotate(360deg);
-  transform: scale(1.5) rotate(360deg);
-  -webkit-box-shadow: 0 0 200px #fff;
-  box-shadow: 0 0 200px #fff
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused
 }
 @-webkit-keyframes mymove {
   0% {
